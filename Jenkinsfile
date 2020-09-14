@@ -10,7 +10,7 @@ pipeline {
 
 	stages {
 		stage("Git checkout") {
-			git url: git@tree.mn:autoopt-hadoop/AnalyticsAlerts.git, branch: ${params.branchName}
+			git url: 'git@tree.mn:autoopt-hadoop/AnalyticsAlerts.git', branch: ${params.branchName}
 		}
 	
 		stage('Docker') {
